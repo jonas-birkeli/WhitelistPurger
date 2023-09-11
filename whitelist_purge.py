@@ -14,12 +14,10 @@ current_date = datetime.now()
 
 
 def remove_user_from_whitelist(uuid: str, username: str):
-	print("Called")
 	obj = {
 		'uuid': uuid,
 		'name': username
 	}
-	print(obj)
 
 	try:
 		with open(whitelist_filename, 'r') as f:
