@@ -1,9 +1,10 @@
 package dev.jonasbirkeli.WhitelistPurger;
+
 import org.bukkit.entity.Player;
+
 
 public class Loader extends org.bukkit.plugin.java.JavaPlugin {
     public void onEnable() {
-        // Register an event listener to listen for player join events
         getServer().getPluginManager().registerEvents(new PlayerJoinListener(), this);
         System.out.println("Whitelist Purger aktiv.");
     }
